@@ -1,0 +1,2534 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2022/3/thesimpsons"
+     xml:base="http://www.semanticweb.org/ontologies/2022/3/thesimpsons"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:thesimpsons="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#"
+     xmlns:untitled-ontology-11="http://www.semanticweb.org/carlosvillanueva/ontologies/2018/4/untitled-ontology-11#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons">
+        <terms:license>http://purl.org/NET/rdflicense/cc-by4.0</terms:license>
+        <rdfs:comment>The Simpson ontology - Ontology that shows the relationship between the characters of the tv serie &apos;The Simpson&apos; and its interpreters.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="authors rafael puyol fernandez víctor andrés cáceres">Rafael Puyol Fernandez
+Víctor Andrés Cáceres</rdfs:isDefinedBy>
+        <rdfs:title>The Simpsons ontology</rdfs:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#title -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#get_drunk_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#get_drunk_in">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:comment>A character get drunk in a place</rdfs:comment>
+        <rdfs:label>get_drunk_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#gives_voice_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#gives_voice_to">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_interpreted_by"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A actor gives voice to a character</rdfs:comment>
+        <rdfs:label>gives_voice_to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#has_a_personality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#has_a_personality">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>A character has a type of personality</rdfs:comment>
+        <rdfs:label>has_a_personality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#has_occupation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#has_occupation">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Occupation"/>
+        <rdfs:comment>A character has a determinate occupation</rdfs:comment>
+        <rdfs:label>has_ocuppation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#his_owner_is -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#his_owner_is">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Person"/>
+        <rdfs:comment>A animal has a determinate character as owner</rdfs:comment>
+        <rdfs:label>his_owner_is</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_boss_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_boss_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is boss of another character</rdfs:comment>
+        <rdfs:label>is_boss_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_brother_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_brother_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is brother of another character</rdfs:comment>
+        <rdfs:label>is_brother_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_daughter_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_daughter_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is daughter of another character</rdfs:comment>
+        <rdfs:label>is_daughter_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_father_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_father_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is father of another character</rdfs:comment>
+        <rdfs:label>is_father_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_friend_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_friend_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is friend of another character</rdfs:comment>
+        <rdfs:label>is_friend_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_granddaughter_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_granddaughter_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is granddaughter  of another character</rdfs:comment>
+        <rdfs:label>is_granddaughter_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_grandfather_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_grandfather_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is grandfather of another character</rdfs:comment>
+        <rdfs:label>is_grandfather_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_grandmother_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_grandmother_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is grandmother of another character</rdfs:comment>
+        <rdfs:label>is_grandmother_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_grandson_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_grandson_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is grandson of another character</rdfs:comment>
+        <rdfs:label>is_grandson_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_husband_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_husband_of">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_wife_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is husband of another character</rdfs:comment>
+        <rdfs:label>is_husband_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_interpreted_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_interpreted_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <rdfs:comment>A character is interpreted by an actor</rdfs:comment>
+        <rdfs:label>is_interpreted_by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_mother_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_mother_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is mother of another character</rdfs:comment>
+        <rdfs:label>is_mother_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_neighbour_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_neighbour_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is neighbour of another character</rdfs:comment>
+        <rdfs:label>is_neighbour_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_owner_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_owner_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Animal"/>
+        <rdfs:comment>A character is owner of an animal</rdfs:comment>
+        <rdfs:label>is_owner_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_sister_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_sister_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is sister of another character</rdfs:comment>
+        <rdfs:label>is_sister_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_son_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_son_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is son of another character</rdfs:comment>
+        <rdfs:label>is_son_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_subordinate_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_subordinate_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is subordinate of  another character on a job</rdfs:comment>
+        <rdfs:label>is_subordinate_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_wife_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_wife_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character is wife of another character</rdfs:comment>
+        <rdfs:label>is_wife_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#studies_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#studies_in">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:comment>A character studies on a place</rdfs:comment>
+        <rdfs:label>studies_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#works_as -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#works_as">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#has_occupation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>A character has a determinate profession</rdfs:comment>
+        <rdfs:label>works_as</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#works_for -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#works_for">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character works for another character</rdfs:comment>
+        <rdfs:label>works_for</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#works_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#works_in">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:comment>A character works in a place</rdfs:comment>
+        <rdfs:label>works_in</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#works_with -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#works_with">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:comment>A character works with another character</rdfs:comment>
+        <rdfs:label>works_with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#age_actor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#age_actor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Property that defines the age of a actor.</rdfs:comment>
+        <rdfs:label>age_actor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#age_character -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#age_character">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <rdfs:comment>Property that defines the age of a character.</rdfs:comment>
+        <rdfs:label>age_character</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_man_actor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_man_actor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Property which defines If the actor is a man or woman. If true the individual is a man, if false is a woman</rdfs:comment>
+        <rdfs:label>is_man_actor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_man_character -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#is_man_character">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Property which defines If the character is a man or woman. If true the individual is a man, if false is a woman</rdfs:comment>
+        <rdfs:label>is_man_character</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_actor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_actor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property which defines the name of the actor.</rdfs:comment>
+        <rdfs:label>name_actor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_cat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_cat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Cat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property which defines the name of the cat.</rdfs:comment>
+        <rdfs:label>name_cat</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_character -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_character">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property which defines the name of the character.</rdfs:comment>
+        <rdfs:label>name_character</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_dog -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_dog">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dog"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property which defines the name of the dog.</rdfs:comment>
+        <rdfs:label>name_dog</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_occupation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_occupation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Occupation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property which defines the name of the occupation.</rdfs:comment>
+        <rdfs:label>name_occupation</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_personality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_personality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property which defines the name of the personality.</rdfs:comment>
+        <rdfs:label>name_personality</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_place -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_place">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property which defines the name of the place.</rdfs:comment>
+        <rdfs:label>name_place</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_profession -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#name_profession">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property which defines the name of the profession.</rdfs:comment>
+        <rdfs:label>name_profession</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#nickname_character -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#nickname_character">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property that defines the nickname of the character</rdfs:comment>
+        <rdfs:label>nickname_character</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#position_place -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#position_place">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property that defines where is located the place</rdfs:comment>
+        <rdfs:label>position_place</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#race_cat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#race_cat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Cat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property that defines the type of cat&apos;s race</rdfs:comment>
+        <rdfs:label>race_cat</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#race_dog -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#race_dog">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dog"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property that defines the type of dog&apos;s race</rdfs:comment>
+        <rdfs:label>race_dog</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#sentence_character -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#sentence_character">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property that defines the more famous sentence of the character</rdfs:comment>
+        <rdfs:label>sentence_character</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#surname_actor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#surname_actor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property which defines the surname of the actor.</rdfs:comment>
+        <rdfs:label>surname_actor</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#surname_character -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#surname_character">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Property which defines the surname of the character.</rdfs:comment>
+        <rdfs:label>surname_character</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#gives_voice_to"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Person"/>
+        <rdfs:comment>Actor</rdfs:comment>
+        <rdfs:label>Actor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Ambitious -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Ambitious">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Ambitious</rdfs:comment>
+        <rdfs:label>Ambitious</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Animal">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Animal</rdfs:comment>
+        <rdfs:label>Animal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bartender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bartender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Bartender</rdfs:comment>
+        <rdfs:label>Bartender</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Cat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Cat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Animal"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dog"/>
+        <rdfs:comment>Cat</rdfs:comment>
+        <rdfs:label>Cat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Person"/>
+        <rdfs:comment>Character</rdfs:comment>
+        <rdfs:label>Character</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Clown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Clown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Clown</rdfs:comment>
+        <rdfs:label>Clown</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Competent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Competent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Competent</rdfs:comment>
+        <rdfs:label>Competent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#DMV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#DMV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:comment>Department of Motor Vehicles (DVM)</rdfs:comment>
+        <rdfs:label>D_M_V</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Director</rdfs:comment>
+        <rdfs:label>Director</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Doctor</rdfs:comment>
+        <rdfs:label>Doctor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Animal"/>
+        <rdfs:comment>Dog</rdfs:comment>
+        <rdfs:label>Dog</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Drunk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Drunk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Drunk</rdfs:comment>
+        <rdfs:label>Drunk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Gambler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Gambler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Gambler</rdfs:comment>
+        <rdfs:label>Gambler</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Generous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Generous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Generous</rdfs:comment>
+        <rdfs:label>Generous</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hospital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:comment>Hospital</rdfs:comment>
+        <rdfs:label>Hospital</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Housewife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Housewife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Occupation"/>
+        <rdfs:comment>Housewife</rdfs:comment>
+        <rdfs:label>Housewife</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Incontient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Incontient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Incontient</rdfs:comment>
+        <rdfs:label>Incontient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Intelligent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Intelligent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Intelligent</rdfs:comment>
+        <rdfs:label>Intelligent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Kind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Kind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Kind</rdfs:comment>
+        <rdfs:label>Kind</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#ManicDepresive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#ManicDepresive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Maniac Depressive</rdfs:comment>
+        <rdfs:label>Manic_Depresive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mayor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mayor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Mayor</rdfs:comment>
+        <rdfs:label>Mayor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moralistic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moralistic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Moralistic</rdfs:comment>
+        <rdfs:label>Moralistic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Occupation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Occupation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Occupation</rdfs:comment>
+        <rdfs:label>Occupation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Operator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Operator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Operator</rdfs:comment>
+        <rdfs:label>Operator</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Owner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Owner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Owner</rdfs:comment>
+        <rdfs:label>Owner</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Perfectionist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Perfectionist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Perfectionist</rdfs:comment>
+        <rdfs:label>Perfectionist</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Person</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Personality</rdfs:comment>
+        <rdfs:label>Personality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>Place</rdfs:comment>
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Plant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:comment>Plant</rdfs:comment>
+        <rdfs:label>Plant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Police -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Police">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Police</rdfs:comment>
+        <rdfs:label>Police</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Occupation"/>
+        <rdfs:comment>Profession</rdfs:comment>
+        <rdfs:label>Profession</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Rebellious -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Rebellious">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Rebellious</rdfs:comment>
+        <rdfs:label>Rebellious</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Religious -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Religious">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Religious</rdfs:comment>
+        <rdfs:label>Religious</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Salesman -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Salesman">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Salesman</rdfs:comment>
+        <rdfs:label>Salesman</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:comment>School</rdfs:comment>
+        <rdfs:label>School</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Secretary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Secretary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Secretary</rdfs:comment>
+        <rdfs:label>Secretary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Set -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Set">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:comment>TV Set</rdfs:comment>
+        <rdfs:label>Set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Shy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Shy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Shy</rdfs:comment>
+        <rdfs:label>Shy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Stingy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Stingy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Stingy</rdfs:comment>
+        <rdfs:label>Stingy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Store -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Store">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:comment>Store</rdfs:comment>
+        <rdfs:label>Store</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Stubborn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Stubborn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Stubborn</rdfs:comment>
+        <rdfs:label>Stubborn</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Occupation"/>
+        <rdfs:comment>Student</rdfs:comment>
+        <rdfs:label>Student</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Tavern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Tavern">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#get_drunk_in"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <rdfs:comment>Tavern</rdfs:comment>
+        <rdfs:label>Tavern</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Teacher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Teacher</rdfs:comment>
+        <rdfs:label>Teacher</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Tester -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Tester">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Profession"/>
+        <rdfs:comment>Tester</rdfs:comment>
+        <rdfs:label>Tester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Unfocussed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Unfocussed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Unfocussed</rdfs:comment>
+        <rdfs:label>Unfocussed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Unintelligent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Unintelligent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Unintelligent</rdfs:comment>
+        <rdfs:label>Unintelligent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Unsocial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Unsocial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Unsocial</rdfs:comment>
+        <rdfs:label>Unsocial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Wicked -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Wicked">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Personality"/>
+        <rdfs:comment>Wicked</rdfs:comment>
+        <rdfs:label>Wicked</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Abraham -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Abraham">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#incontient"/>
+        <thesimpsons:is_father_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Herbert"/>
+        <thesimpsons:is_father_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:is_grandfather_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart"/>
+        <thesimpsons:is_grandfather_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hugo"/>
+        <thesimpsons:is_grandfather_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa"/>
+        <thesimpsons:is_grandfather_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Maggie"/>
+        <thesimpsons:is_husband_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mona"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dan_Castellaneta"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Abraham</thesimpsons:name_character>
+        <thesimpsons:sentence_character>Ahhhh!</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Simpson</thesimpsons:surname_character>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Alex_Desert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Alex_Desert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Eddie"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lou"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Alex</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Désert</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Alex_D%C3%A9sert</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Apu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Apu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#kind"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hank_Azaria"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#salesman"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Kwik_E_Mart"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Apu</thesimpsons:name_character>
+        <thesimpsons:nickname_character>Apu</thesimpsons:nickname_character>
+        <thesimpsons:sentence_character>Thank You, Come Again!</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Nahasapeemapetilon</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Apu_Nahasapeemapetilon</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Barney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Barney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:get_drunk_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moe_Tavern"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#drunk"/>
+        <thesimpsons:is_friend_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dan_Castellaneta"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Barney</thesimpsons:name_character>
+        <thesimpsons:sentence_character>Burp!</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Gumble</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Barney_Gumble</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#rebellious"/>
+        <thesimpsons:has_occupation rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#student"/>
+        <thesimpsons:is_brother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hugo"/>
+        <thesimpsons:is_brother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa"/>
+        <thesimpsons:is_brother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Maggie"/>
+        <thesimpsons:is_grandson_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Abraham"/>
+        <thesimpsons:is_grandson_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mona"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nancy_Cartwright"/>
+        <thesimpsons:is_owner_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Santa_Little_Helper"/>
+        <thesimpsons:is_son_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:is_son_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marge"/>
+        <thesimpsons:studies_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Elementary_School"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Bart</thesimpsons:name_character>
+        <thesimpsons:sentence_character>ay caramba</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Simpson</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Bart_Simpson</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Christopher_Collins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Christopher_Collins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mr._Burns"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Christopher</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Collins</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Christopher_Collins</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Clancy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Clancy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unintelligent"/>
+        <thesimpsons:is_boss_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Eddie"/>
+        <thesimpsons:is_boss_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lou"/>
+        <thesimpsons:is_father_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Ralph"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hank_Azaria"/>
+        <thesimpsons:studies_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Elementary_School"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#police"/>
+        <thesimpsons:works_for rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Diamond"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Police_Department"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Clancy</thesimpsons:name_character>
+        <thesimpsons:sentence_character>take him, guys</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>WIggum</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Chief_Wiggum</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#D_V_M_Tester -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#D_V_M_Tester">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Tester"/>
+        <thesimpsons:name_profession>DVM Tester</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dan_Castellaneta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dan_Castellaneta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Abraham"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Barney"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Diamond"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Krusty"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Dan</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Castellaneta</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Dan_Castellaneta</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Danny_De_Vito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Danny_De_Vito">
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Herbert"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">77</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Danny</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>De Vito</thesimpsons:surname_actor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Diamond -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Diamond">
+        <thesimpsons:is_boss_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Clancy"/>
+        <thesimpsons:is_boss_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Eddie"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dan_Castellaneta"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#mayor"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Joe</thesimpsons:name_character>
+        <thesimpsons:surname_character>Quimby</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Mayor_Quimby</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Eddie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Eddie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unintelligent"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Alex_Desert"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#police"/>
+        <thesimpsons:works_for rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Clancy"/>
+        <thesimpsons:works_for rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Diamond"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Police_Department"/>
+        <thesimpsons:works_with rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lou"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Eddie</thesimpsons:name_character>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Edna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Edna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#gambler"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marcia_Wallace"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#teacher"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Elementary_School"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Edna</thesimpsons:name_character>
+        <thesimpsons:nickname_character>Mrs. Krabappel</thesimpsons:nickname_character>
+        <thesimpsons:sentence_character>Ha!</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Krabappel</thesimpsons:surname_character>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Flanders -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Flanders">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hibbert"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#religious"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#shy"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Harry_Shearer"/>
+        <thesimpsons:is_neighbour_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#teacher"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Ned</thesimpsons:name_character>
+        <thesimpsons:sentence_character>Hi-Diddily-Ho! (often adds &apos;Neighborino&apos; to the end, when addressing Homer)</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Flanders</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Ned_Flanders</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Glenn_Close -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Glenn_Close">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mona"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Glenn</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Close</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Glenn_Close</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hank_Azaria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hank_Azaria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Apu"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Clancy"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moe"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Hank</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Azaria</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Hank_Azaria</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Harry_Shearer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Harry_Shearer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Flanders"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Skinner"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Smithers"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Harry</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Shearer</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Harry_Shearer</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Herbert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Herbert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#ambitious"/>
+        <thesimpsons:is_brother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Danny_De_Vito"/>
+        <thesimpsons:is_son_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Abraham"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>heberto</thesimpsons:name_character>
+        <thesimpsons:position_place>no vive en springfield</thesimpsons:position_place>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hibbert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hibbert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#competent"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Harry_Shearer"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#doctor"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Hospital"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Julius</thesimpsons:name_character>
+        <thesimpsons:sentence_character>This man is dead</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Hibbert</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Dr._Hibbert</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:get_drunk_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moe_Tavern"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unfocussed"/>
+        <thesimpsons:is_brother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Herbert"/>
+        <thesimpsons:is_father_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart"/>
+        <thesimpsons:is_father_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hugo"/>
+        <thesimpsons:is_father_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa"/>
+        <thesimpsons:is_father_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Maggie"/>
+        <thesimpsons:is_friend_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Barney"/>
+        <thesimpsons:is_friend_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moe"/>
+        <thesimpsons:is_husband_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marge"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dan_Castellaneta"/>
+        <thesimpsons:is_neighbour_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Flanders"/>
+        <thesimpsons:is_son_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Abraham"/>
+        <thesimpsons:is_subordinate_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mr._Burns"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#operator"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nuclear_Plant"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Homer</thesimpsons:name_character>
+        <thesimpsons:sentence_character>Mmm, donuts</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Simpson</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Homer_Simpson</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hugo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hugo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#wicked"/>
+        <thesimpsons:is_brother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart"/>
+        <thesimpsons:is_brother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa"/>
+        <thesimpsons:is_brother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Maggie"/>
+        <thesimpsons:is_grandson_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Abraham"/>
+        <thesimpsons:is_grandson_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mona"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nancy_Cartwright"/>
+        <thesimpsons:is_son_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:is_son_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marge"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>hugo</thesimpsons:name_character>
+        <thesimpsons:surname_character>simpson</thesimpsons:surname_character>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Jodie_Foster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Jodie_Foster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Maggie"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">59</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Jodie</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Foster</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Jodie_Foster</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Julie_Kavner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Julie_Kavner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marge"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">71</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Julie</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Kavner</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Julie_Kavner</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Krusty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Krusty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#manic_Depresive"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dan_Castellaneta"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#clown"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Television"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">56</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Herschel</thesimpsons:name_character>
+        <thesimpsons:nickname_character>Krusty The Clown</thesimpsons:nickname_character>
+        <thesimpsons:sentence_character>Hey, Hey Kids!</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Krustofsky</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Krusty_the_Clown</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Kwik_E_Mart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Kwik_E_Mart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Store"/>
+        <thesimpsons:name_place>Kwik-E-Mart</thesimpsons:name_place>
+        <thesimpsons:position_place>outdoors of Springfield</thesimpsons:position_place>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#moralistic"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#perfectionist"/>
+        <thesimpsons:has_occupation rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#student"/>
+        <thesimpsons:is_daughter_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:is_daughter_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marge"/>
+        <thesimpsons:is_granddaughter_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Abraham"/>
+        <thesimpsons:is_granddaughter_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mona"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Yeardley_Smith"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hugo"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Maggie"/>
+        <thesimpsons:studies_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Elementary_School"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Lisa</thesimpsons:name_character>
+        <thesimpsons:sentence_character>If anyone wants me, I&apos;ll be in my room</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Simpson</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Lisa_Simpson</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lou -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lou">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unintelligent"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Alex_Desert"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Police_Department"/>
+        <thesimpsons:works_with rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Eddie"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Lou</thesimpsons:name_character>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Maggie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Maggie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#intelligent"/>
+        <thesimpsons:is_daughter_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:is_daughter_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marge"/>
+        <thesimpsons:is_granddaughter_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Abraham"/>
+        <thesimpsons:is_granddaughter_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mona"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Jodie_Foster"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hugo"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Maggie</thesimpsons:name_character>
+        <thesimpsons:sentence_character>(Pacifier Suck)</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Simpson</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Maggie_Simpson</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marcia_Wallace -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marcia_Wallace">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Edna"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">70</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Marcia</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Wallace</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Marcia_Wallace</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#generous"/>
+        <thesimpsons:has_occupation rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#housewife"/>
+        <thesimpsons:is_daughter_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mona"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Julie_Kavner"/>
+        <thesimpsons:is_mother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart"/>
+        <thesimpsons:is_mother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hugo"/>
+        <thesimpsons:is_mother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa"/>
+        <thesimpsons:is_mother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Maggie"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Patty"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Selma"/>
+        <thesimpsons:is_wife_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Marge</thesimpsons:name_character>
+        <thesimpsons:sentence_character>Oh, Homie</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Simpson</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Marge_Simpson</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Milhouse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Milhouse">
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unsocial"/>
+        <thesimpsons:has_occupation rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#student"/>
+        <thesimpsons:is_friend_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Pamela_Hayden"/>
+        <thesimpsons:studies_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Elementary_School"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Milhouse</thesimpsons:name_character>
+        <thesimpsons:nickname_character>Milhouse</thesimpsons:nickname_character>
+        <thesimpsons:sentence_character>Radical!</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Van Houten</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Milhouse_Van_Houten</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:is_friend_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hank_Azaria"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#bartender"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moe_Tavern"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Moe</thesimpsons:name_character>
+        <thesimpsons:sentence_character>WhaaaaAAAAAT?!</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Szyslak</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Moe_Szyslak</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moe_Tavern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moe_Tavern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Tavern"/>
+        <thesimpsons:name_place>Moe&apos;s Tavern</thesimpsons:name_place>
+        <thesimpsons:position_place>on Springfield&apos;s Walnut Street</thesimpsons:position_place>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#stubborn"/>
+        <thesimpsons:is_grandmother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart"/>
+        <thesimpsons:is_grandmother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hugo"/>
+        <thesimpsons:is_grandmother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa"/>
+        <thesimpsons:is_grandmother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Maggie"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Glenn_Close"/>
+        <thesimpsons:is_mother_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:is_wife_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Abraham"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">63</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Mona</thesimpsons:name_character>
+        <thesimpsons:sentence_character>It wasn&apos;t your fault, sweetie</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Simpson</thesimpsons:surname_character>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mr._Burns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mr._Burns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_a_personality rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#stingy"/>
+        <thesimpsons:is_boss_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Homer"/>
+        <thesimpsons:is_boss_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Smithers"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Christopher_Collins"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#owner"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nuclear_Plant"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">79</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Charles</thesimpsons:name_character>
+        <thesimpsons:sentence_character>Excellent!</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Montgomery Burns</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Mr._Burns</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nancy_Cartwright -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nancy_Cartwright">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hugo"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nelson"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Ralph"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Nancy</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Cartwright</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Nancy_Cartwright</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nelson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nelson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_occupation rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#student"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nancy_Cartwright"/>
+        <thesimpsons:studies_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Elementary_School"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Nelson</thesimpsons:name_character>
+        <thesimpsons:nickname_character>Nelson</thesimpsons:nickname_character>
+        <thesimpsons:sentence_character>Ha, Ha!</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Muntz</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Nelson_Muntz</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nuclear_Plant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nuclear_Plant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Plant"/>
+        <thesimpsons:name_place>Nuclear plant</thesimpsons:name_place>
+        <thesimpsons:position_place>Springfield</thesimpsons:position_place>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Pamela_Hayden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Pamela_Hayden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Milhouse"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">68</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Pamela</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Hayden</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Pamela_Hayden</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Patty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Patty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Julie_Kavner"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marge"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Selma"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#D_V_M_Tester"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_DMV"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_character>
+        <thesimpsons:name_character>patty</thesimpsons:name_character>
+        <thesimpsons:sentence_character>Some days at the DMV, we don&apos;t let the line move at all. We call those weekdays</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Voubier</thesimpsons:surname_character>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Police_Department -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Police_Department">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Place"/>
+        <thesimpsons:name_place>Springfield Police Department</thesimpsons:name_place>
+        <thesimpsons:position_place>Spingfield center</thesimpsons:position_place>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Ralph -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Ralph">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:has_occupation rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#student"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nancy_Cartwright"/>
+        <thesimpsons:is_son_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Clancy"/>
+        <thesimpsons:studies_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Elementary_School"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Ralph</thesimpsons:name_character>
+        <thesimpsons:sentence_character>Help, I am touching my private part</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Wiggun</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Ralph_Wiggum</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Santa_Little_Helper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Santa_Little_Helper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Dog"/>
+        <thesimpsons:his_owner_is rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bart"/>
+        <thesimpsons:name_dog>Santa&apos;s Little Helper</thesimpsons:name_dog>
+        <thesimpsons:race_dog>Greyhound</thesimpsons:race_dog>
+        <rdfs:sameAs>https://dbpedia.org/page/Santa&apos;s_Little_Helper</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Selma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Selma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Julie_Kavner"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Marge"/>
+        <thesimpsons:is_sister_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Patty"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#D_V_M_Tester"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_DMV"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Selma</thesimpsons:name_character>
+        <thesimpsons:sentence_character>How&apos;s my blubber in-law?</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Bouvier</thesimpsons:surname_character>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Skinner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Skinner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Harry_Shearer"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#director"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Elementary_School"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Seymour</thesimpsons:name_character>
+        <thesimpsons:nickname_character>Principal Skinner</thesimpsons:nickname_character>
+        <thesimpsons:sentence_character>SIIIIIMMMMMPSOOOOOONNNNNNN!</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Skinner</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Principal_Skinner</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Smithers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Smithers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+        <thesimpsons:is_interpreted_by rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Harry_Shearer"/>
+        <thesimpsons:is_subordinate_of rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mr._Burns"/>
+        <thesimpsons:works_as rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#secretary"/>
+        <thesimpsons:works_in rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Nuclear_Plant"/>
+        <thesimpsons:age_character rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</thesimpsons:age_character>
+        <thesimpsons:is_man_character rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</thesimpsons:is_man_character>
+        <thesimpsons:name_character>Waylon</thesimpsons:name_character>
+        <thesimpsons:nickname_character>Smithers</thesimpsons:nickname_character>
+        <thesimpsons:sentence_character>That&apos;s Homer Simpson, one of your (insulting term) from sector 7G.&quot; (response to Mr. Burns&apos; aforementioned catchphrase)</thesimpsons:sentence_character>
+        <thesimpsons:surname_character>Smithers</thesimpsons:surname_character>
+        <rdfs:sameAs>https://dbpedia.org/page/Waylon_Smithers</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Snowball -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Snowball">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Cat"/>
+        <thesimpsons:his_owner_is rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa"/>
+        <thesimpsons:name_cat>Snowball</thesimpsons:name_cat>
+        <thesimpsons:race_cat>black cat</thesimpsons:race_cat>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_DMV -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_DMV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#DMV"/>
+        <thesimpsons:name_place>Springfield Department of Motors Vehicles</thesimpsons:name_place>
+        <thesimpsons:position_place>Springfield center</thesimpsons:position_place>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Elementary_School -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Elementary_School">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#School"/>
+        <thesimpsons:name_place>Springfield School</thesimpsons:name_place>
+        <thesimpsons:position_place>Springfield center</thesimpsons:position_place>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Hospital -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Hospital">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hospital"/>
+        <thesimpsons:name_place>Springfield Hospital</thesimpsons:name_place>
+        <thesimpsons:position_place>outdoors of Springfield</thesimpsons:position_place>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Television -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Springfield_Television">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Set"/>
+        <thesimpsons:name_place>Springfield Television Set</thesimpsons:name_place>
+        <thesimpsons:position_place>Springfield center</thesimpsons:position_place>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Yeardley_Smith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Yeardley_Smith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Actor"/>
+        <thesimpsons:gives_voice_to rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Lisa"/>
+        <thesimpsons:age_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">57</thesimpsons:age_actor>
+        <thesimpsons:is_man_actor rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</thesimpsons:is_man_actor>
+        <thesimpsons:name_actor>Yeardley</thesimpsons:name_actor>
+        <thesimpsons:surname_actor>Smith</thesimpsons:surname_actor>
+        <rdfs:sameAs>https://dbpedia.org/page/Yeardley_Smith</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#ambitious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#ambitious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Ambitious"/>
+        <thesimpsons:name_personality>ambitious</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#bartender -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#bartender">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Bartender"/>
+        <thesimpsons:name_profession>bartender</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#clown -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#clown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Clown"/>
+        <thesimpsons:name_profession>clown</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#competent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#competent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Competent"/>
+        <thesimpsons:name_personality>competent</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#director -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#director">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Director"/>
+        <thesimpsons:name_profession>director</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#doctor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#doctor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Doctor"/>
+        <thesimpsons:name_profession>doctor</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#drunk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#drunk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Drunk"/>
+        <thesimpsons:name_personality>drunk</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#gambler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#gambler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Gambler"/>
+        <thesimpsons:name_personality>gambler</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#generous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#generous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Generous"/>
+        <thesimpsons:name_personality>generous</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#housewife -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#housewife">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Housewife"/>
+        <thesimpsons:name_occupation>housewife</thesimpsons:name_occupation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#incontient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#incontient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Incontient"/>
+        <thesimpsons:name_personality>incontient</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#intelligent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#intelligent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Intelligent"/>
+        <thesimpsons:name_personality>intelligent</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#kind -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#kind">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Kind"/>
+        <thesimpsons:name_personality>kind</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#manic_Depresive -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#manic_Depresive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#ManicDepresive"/>
+        <thesimpsons:name_personality>manic-depresive</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#mayor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#mayor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Mayor"/>
+        <thesimpsons:name_profession>mayor</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#moralistic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#moralistic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Moralistic"/>
+        <thesimpsons:name_personality>moralistic</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#operator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#operator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Operator"/>
+        <thesimpsons:name_profession>operator</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#owner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#owner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Owner"/>
+        <thesimpsons:name_profession>owner</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#perfectionist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#perfectionist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Perfectionist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#police -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#police">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Police"/>
+        <thesimpsons:name_profession>police</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#rebellious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#rebellious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Rebellious"/>
+        <thesimpsons:name_personality>rebellious</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#religious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#religious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Religious"/>
+        <thesimpsons:name_personality>religious</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#salesman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#salesman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Salesman"/>
+        <thesimpsons:name_profession>salesman</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#secretary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#secretary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Secretary"/>
+        <thesimpsons:name_profession>secretary</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#shy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#shy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Shy"/>
+        <thesimpsons:name_personality>shy</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#stingy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#stingy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Stingy"/>
+        <thesimpsons:name_personality>stingy</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#stubborn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#stubborn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Stubborn"/>
+        <thesimpsons:name_personality>stubborn</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#student -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#student">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Student"/>
+        <thesimpsons:name_occupation>student</thesimpsons:name_occupation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#teacher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#teacher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Teacher"/>
+        <thesimpsons:name_profession>teacher</thesimpsons:name_profession>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unfocussed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unfocussed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Unfocussed"/>
+        <thesimpsons:name_personality>unfocussed</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unintelligent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unintelligent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Unintelligent"/>
+        <thesimpsons:name_personality>unintelligent</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unsocial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#unsocial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Unsocial"/>
+        <thesimpsons:name_personality>unsocial</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2022/3/thesimpsons#wicked -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#wicked">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Wicked"/>
+        <thesimpsons:name_personality>wicked</thesimpsons:name_personality>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#DMV"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Hospital"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Plant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#School"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Set"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Store"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Tavern"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#School"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#studies_in"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Student"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#School"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#works_in"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Teacher"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Character"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Tavern"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#t"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#get_drunk_in"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#t"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ontologies/2022/3/thesimpsons#Drunk"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
